@@ -1,0 +1,30 @@
+name: Request a quote
+description: Describe a small, clearly scoped job and get a fixed-price quote.
+title: "[Quote] "
+labels: ["quote-request"]
+body:
+  - type: textarea
+    id: task
+    attributes:
+      label: What needs doing?
+      description: The input you have, and the result you need.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: How will you know it's done?
+      description: Acceptance criteria, e.g. "all 12 files merged into one CSV with no duplicate order ids".
+    validations:
+      required: true
+  - type: input
+    id: budget
+    attributes:
+      label: Budget (optional)
+  - type: input
+    id: deadline
+    attributes:
+      label: Deadline (optional)
+  - type: markdown
+    attributes:
+      value: "Please do not include passwords, API keys or personal data. Sample data can be dummy."

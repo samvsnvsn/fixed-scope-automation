@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fixed-scope automation &amp; code fixes</title>
+<meta name="description" content="Small, clearly scoped automation, API integration, data conversion and bug-fix jobs. Fixed price, tested before delivery.">
+<style>
+  :root { --bg: #fbfaf7; --fg: #1d1d1b; --muted: #5d5b55; --line: #e4e1d8; --accent: #1f5f8b; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #151514; --fg: #ecebe6; --muted: #a8a59c; --line: #2d2c29; --accent: #7cb4dc; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 12px; }
+  h2 { font-size: 1.15rem; margin: 36px 0 8px; }
+  p, li { color: var(--fg); }
+  .lede { color: var(--muted); font-size: 1.05rem; }
+  ul { padding-left: 20px; }
+  .card { border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; margin: 12px 0; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin-top: 8px; padding: 10px 16px; border-radius: 8px; background: var(--accent); color: var(--bg); text-decoration: none; font-weight: 600; }
+  small { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Fixed-scope automation, integrations &amp; code fixes</h1>
+  <p class="lede">Small, clearly defined jobs done properly: you describe the input and the result you need, I quote a fixed price, and you get tested work plus the exact command to run it.</p>
+
+  <h2>What I take on</h2>
+  <ul>
+    <li>CSV / Excel / JSON / XML conversion and cleanup, with a change log</li>
+    <li>Scripts that automate a manual task (Python, TypeScript/Node.js)</li>
+    <li>REST API and webhook integrations: auth, retries, error handling</li>
+    <li>Specific bug fixes, with a test or benchmark showing the fix</li>
+    <li>Small React / Next.js changes and GDScript (Godot) fixes</li>
+  </ul>
+
+  <h2>Recent public work</h2>
+  <div class="card">
+    <strong>Godot: made a "Near-Perfect" Tetris AI match the published algorithm</strong><br>
+    Found four differences between an open-source GDScript port and Yiyuan Lee's algorithm, then rewrote the evaluator with a one-piece lookahead. Headless benchmark on Godot 4.5.1: 400/400 pieces survived and 160 lines cleared (the maximum), against 319 pieces for the previous scoring.<br>
+    <a href="https://github.com/savantsavior/t-story/pull/3">Pull request with details</a> <small>(open, awaiting the maintainer's review)</small>
+  </div>
+
+  <h2>How it works</h2>
+  <ul>
+    <li>Fixed price agreed before starting. No payment is asked for upfront outside a proper platform.</li>
+    <li>I use AI-assisted development and personally review, run and test everything before handing it over.</li>
+    <li>You get the deliverable, a short README, and tests where they make sense.</li>
+  </ul>
+
+  <h2>Request a quote</h2>
+  <p>Open a request describing the input, the output you need, and any deadline. Please don't include passwords or private data.</p>
+  <a class="cta" href="https://github.com/samvsnvsn/fixed-scope-automation/issues/new?template=quote.yml">Request a quote</a>
+  <p><small>UK-based. Payment through an established freelancing platform. No crypto.</small></p>
+</main>
+</body>
+</html>
