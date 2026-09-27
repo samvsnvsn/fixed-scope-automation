@@ -27,4 +27,4 @@ body:
       label: Deadline (optional)
   - type: markdown
     attributes:
-      value: "Please do not include passwords, API keys or personal data. Sample data can be dummy."
+      value: "Please do not include passwords, API keys or personal data. Sample data can be dummy. Once the scope and price are agreed here, you pay a deposit through a Gumroad checkout link; work starts only after it is paid."
